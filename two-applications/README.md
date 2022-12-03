@@ -1,0 +1,6 @@
+- We have two applications. 
+- Build IaC for two applications that run on EC2. 
+- Application 1 has only read access to our S3 bucket. 
+- App 2 has both read and write access. 
+- Devops engineer (you) should also have access to these application hosts (EC2) to troubleshoot from time to time.
+- The apps themselves can be just simple nginx (or a blank EC2). You don't have to write the app.

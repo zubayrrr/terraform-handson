@@ -20,19 +20,18 @@ resource "aws_s3_bucket" "demo-bucket" {
     bucket = "old-demo-bucket-randomhash-121321312"
 }
 
-
 ```bash
 aws s3 mv s3://old-demo-bucket-randomhash-121321312 s3://new-demo-bucket-randomhash-121321312
 ```
 
 ```terraform
 resource "aws_s3_bucket" "demo-bucket" {
-    bucket = "old-demo-bucket-randomhash-121321312"
+    bucket = "new-demo-bucket-randomhash-121321312"
 }
 ```
 
 ```bash
-terraform state mv aws_s3_bucket.demo-bucket  aws_s3_bucket.new-demo-bucket-randomhash-121321312
+terraform state mv aws_s3_bucket.demo-bucket aws_s3_bucket.new-demo-bucket-randomhash-121321312
 ```
 
 
